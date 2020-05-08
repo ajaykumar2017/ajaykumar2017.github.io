@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Databases (Firebase)</title>
+    <style>
+        .container {
+            max-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h2>Recipes</h2>
+        <ul>
+        </ul>
+        <form>
+            <label for="recipe">Add a new recipe:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="recipe" required>
+                <div class="input-group-append">
+                    <input type="submit" value="add" class="btn btn-outline-secondary">
+                </div>
+            </div>
+        </form>
+    </div>
+    <button>unsubscribe from changes</button>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAKb4BIlU4idXrakh3hPTdQgrBBEKHuzO8",
+            authDomain: "udemy-modern-javascript-d25b7.firebaseapp.com",
+            databaseURL: "https://udemy-modern-javascript-d25b7.firebaseio.com",
+            projectId: "udemy-modern-javascript-d25b7",
+            storageBucket: "udemy-modern-javascript-d25b7.appspot.com",
+            messagingSenderId: "845751697531",
+            appId: "1:845751697531:web:60c96aa29ac184c699e2de",
+            measurementId: "G-6LXWT8NPQ7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <!-- <script src="databases_firebase.js"></script> -->
+    <script src="real_time_listeners.js"></script>
+</body>
+
+</html>
