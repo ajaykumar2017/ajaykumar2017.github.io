@@ -17,166 +17,162 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script src="js/ajax.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-                    // Store hash
-                    var hash = this.hash;
+      // Store hash
+      var hash = this.hash;
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        //window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
-
-
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        //window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 
-    <style>
-        body,
-        html,
-        .main {
-            height: 100%;
-        }
-        
-        section {
-            min-height: 100%;
-        }
-    </style>
-    <style type="text/css">
-        #loader {
-            width: 100%;
-            height: 100%;
-            background-color: #222;
-            margin: 0;
-            position: fixed;
-            z-index: 1010;
-            padding-top: 250px;
-        }
-        
-        .circle {
-            background-color: rgba(0, 0, 0, 0);
-            border: 5px solid rgba(0, 183, 229, 0.9);
-            opacity: .9;
-            border-right: 5px solid rgba(0, 0, 0, 0);
-            border-left: 5px solid rgba(0, 0, 0, 0);
-            border-radius: 100px;
-            box-shadow: 0 0 35px #2187e7;
-            width: 100px;
-            height: 100px;
-            margin: 0 auto;
-            -moz-animation: spinPulse 1s infinite ease-in-out;
-            -webkit-animation: spinPulse 1s infinite linear;
-        }
-        
-        .circle1 {
-            background-color: rgba(0, 0, 0, 0);
-            border: 5px solid rgba(0, 183, 229, 0.9);
-            opacity: .9;
-            border-left: 5px solid rgba(0, 0, 0, 0);
-            border-right: 5px solid rgba(0, 0, 0, 0);
-            border-radius: 100px;
-            box-shadow: 0 0 15px #2187e7;
-            width: 60px;
-            height: 60px;
-            margin: 0 auto;
-            position: relative;
-            top: -80px;
-            -moz-animation: spinoffPulse 1s infinite linear;
-            -webkit-animation: spinoffPulse 1s infinite linear;
-        }
-        
-        @-moz-keyframes spinPulse {
-            0% {
-                -moz-transform: rotate(160deg);
-                opacity: 0;
-                box-shadow: 0 0 1px #2187e7;
-            }
-            50% {
-                -moz-transform: rotate(145deg);
-                opacity: 1;
-            }
-            100% {
-                -moz-transform: rotate(-320deg);
-                opacity: 0;
-            }
-            ;
-        }
-        
-        @-moz-keyframes spinoffPulse {
-            0% {
-                -moz-transform: rotate(0deg);
-            }
-            100% {
-                -moz-transform: rotate(360deg);
-            }
-            ;
-        }
-        
-        @-webkit-keyframes spinPulse {
-            0% {
-                -webkit-transform: rotate(160deg);
-                opacity: 0;
-                box-shadow: 0 0 1px #2187e7;
-            }
-            50% {
-                -webkit-transform: rotate(145deg);
-                opacity: 1;
-            }
-            100% {
-                -webkit-transform: rotate(-320deg);
-                opacity: 0;
-            }
-            ;
-        }
-        
-        @-webkit-keyframes spinoffPulse {
-            0% {
-                -webkit-transform: rotate(0deg);
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-            }
-            ;
-        }
-        
-        .hide {
-            display: none;
-        }
-    </style>
 
-    <script type="text/javascript">
-        $(function() {
-            $('div[onload]').trigger('onload');
-        });
-    </script>
+
+ <style>
+body, html, .main {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
+</style>
+<style type="text/css">
+#loader{
+      width: 100%;
+      height: 100%;
+      background-color: #222;
+      margin: 0;
+      position: fixed;
+      z-index: 1010;
+      padding-top: 250px;
+}
+.circle {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-right: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 100px;
+    box-shadow: 0 0 35px #2187e7;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    -moz-animation: spinPulse 1s infinite ease-in-out;
+    -webkit-animation: spinPulse 1s infinite linear;
+}
+
+.circle1 {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-left: 5px solid rgba(0,0,0,0);
+    border-right: 5px solid rgba(0,0,0,0);
+    border-radius: 100px;
+    box-shadow: 0 0 15px #2187e7;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+    -moz-animation: spinoffPulse 1s infinite linear;
+    -webkit-animation: spinoffPulse 1s infinite linear;
+}
+
+@-moz-keyframes spinPulse {
+    0% {
+        -moz-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7;
+    }
+
+    50% {
+        -moz-transform: rotate(145deg);
+        opacity: 1;
+    }
+
+    100% {
+        -moz-transform: rotate(-320deg);
+        opacity: 0;
+    };
+}
+
+@-moz-keyframes spinoffPulse {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes spinPulse {
+    0% {
+        -webkit-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7;
+    }
+
+    50% {
+        -webkit-transform: rotate(145deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-320deg);
+        opacity: 0;
+    };
+}
+
+@-webkit-keyframes spinoffPulse {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+.hide{
+    display: none;
+}
+</style>
+
+        <script type="text/javascript">
+             $(function(){
+             $('div[onload]').trigger('onload');
+              });
+        </script>
 
 
 </head>
 
 <body>
 
-    <div id="loader">
-        <center>
-            <div class="circle"></div>
-            <div class="circle1"></div>
-        </center>
-    </div>
+    <div id="loader"><center>
+        <div class="circle"></div>
+        <div class="circle1"></div>
+    </center></div>
 
 
 
@@ -184,42 +180,42 @@
     <div id="mySidenavbg2"></div>
     <div id="mySidenav" class="sidenav">
         <!-- <a href="javascript:void(0)" class="closebtn" onclick="navToggle()">&times;</a> -->
-        <a href="#home" onclick="navToggle()" ">Home</a>
-        <a href="#about2 " onclick="navToggle() ">About</a>
-        <a href="#edu " onclick="navToggle() ">Education</a>
-        <a href="#skills " onclick="navToggle() ">Professional Skills</a>
-        <a href="#portfolio " onclick="navToggle() ">Portfolio</a>
-        <a href="#contact2 " onclick="navToggle() ">Contact</a>
+        <a href="#home" onclick="navToggle()"">Home</a>
+        <a href="#about2" onclick="navToggle()">About</a>
+        <a href="#edu" onclick="navToggle()">Education</a>
+        <a href="#skills" onclick="navToggle()">Professional Skills</a>
+        <a href="#portfolio" onclick="navToggle()">Portfolio</a>
+        <a href="#contact2" onclick="navToggle()">Contact</a>
     </div>
 
-<span style="font-size:30px;cursor:pointer " onclick="navToggle() " id="mynavbtn ">
-    <div id="nav-icon1 ">
+<span style="font-size:30px;cursor:pointer" onclick="navToggle()" id="mynavbtn">
+    <div id="nav-icon1">
         <span></span>
         <span></span>
         <span></span>
     </div>
 </span>
-<div id="downarrow " class="down-arrow animated fadeInDown " style="z-index: 100 ">
-<a href="#about2 " id="subnav " class="text-center card sub-nav " style="background-olor: red "><i class="down " id="downicon "></i></a></div>
+<div id="downarrow" class="down-arrow animated fadeInDown" style="z-index: 100">
+<a href="#about2" id="subnav" class="text-center card sub-nav" style="background-olor: red"><i class="down" id="downicon"></i></a></div>
 
 
-    <div id="home " class="container-fluid ">
-        <div class="overlay " style="overflow: hidden; ">
-        <div class="col-md-8 col-sm-12 " style="heigh: 90vh; padding-left: 50px; ">
+    <div id="home" class="container-fluid">
+        <div class="overlay" style="overflow: hidden;">
+        <div class="col-md-8 col-sm-12" style="heigh: 90vh; padding-left: 50px; ">
             <!--  -->
-            <p style="color: white; margin-top: 100px " class="display-1 home-text animated fadeInRight ">Hi,<br>I'm AJAY.</p>
-            <p style="color: white " class="display-4 home-text animated fadeInRight " id="ima ">I'm a </p>
+            <p style="color: white; margin-top: 100px" class="display-1 home-text animated fadeInRight">Hi,<br>I'm AJAY.</p>
+            <p style="color: white" class="display-4 home-text animated fadeInRight" id="ima">I'm a </p>
            
-  <p href=" " class="typewrite display-4 home-text animated fadeInRight " style="color: white " data-period="2000 " data-type='[ "Web Developer ", "Android App Developer ", "UX/UI Designer ", "Graphics Designer ", "Programmer "]'>
-    <span class="wrap "></span>
+  <p href="" class="typewrite display-4 home-text animated fadeInRight" style="color: white" data-period="2000" data-type='[ "Web Developer", "Android App Developer", "UX/UI Designer", "Graphics Designer", "Programmer"]'>
+    <span class="wrap"></span>
   </p>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   
 
-    <script  src="js/typewriter.js " type="text/javascript "></script>
-    <script type="text/javascript ">tprt();</script>
+    <script  src="js/typewriter.js" type="text/javascript"></script>
+    <script type="text/javascript">tprt();</script>
         </div>
             
         </div>
@@ -229,21 +225,21 @@
 
 
     
-    <div id="about " class="container-fluid " onload="hls() ">
-        <div class="overlay ">
-            <!-- <div class="jumbotron2 "><p class="hedrr text-center text-light text-uppercase ">About Me</p></div> -->
+    <div id="about" class="container-fluid" onload="hls()">
+        <div class="overlay">
+            <!-- <div class="jumbotron2"><p class="hedrr text-center text-light text-uppercase">About Me</p></div> -->
             <center>
-            <div class="container about-card " id="about2 ">
-                <div class="card " style="border-radius: 3px; background-color: #45526e; ">
-                    <img src="img/Picture1.png " style=" " class="img-fluid align-self-center col-sm-4 col-md-12 ">
-                    <p class="text-center card-text " style="width: 100%; font-weight: bolder; margin: 5px ">
+            <div class="container about-card" id="about2">
+                <div class="card" style="border-radius: 3px; background-color: #45526e;">
+                    <img src="img/Picture1.png" style="" class="img-fluid align-self-center col-sm-4 col-md-12">
+                    <p class="text-center card-text" style="width: 100%; font-weight: bolder; margin: 5px">
                     Who am I?</p>
-                    <p class="align-self-center text-justify card-text " style=" ">I'm Ajay Kumar, digital designer, developer and programmer, working on web development, android app development, Networking(Routing and Switching) and coding. If you have a project that you need to be done in efficient and elegant way then thats where I come in!<br>
+                    <p class="align-self-center text-justify card-text" style="">I'm Ajay Kumar, digital designer, developer and programmer, working on web development, android app development, Networking(Routing and Switching) and coding. If you have a project that you need to be done in efficient and elegant way then thats where I come in!<br>
 
 My job is to build your project so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. </p>
-<p class="card-text " style="font-weight: bolder; margin: 5px ">Hire me, I'm really good.</p>
-                    <div class="align-self-center ">
-                    <a href="resume.pdf " download class="btn btn-outline-warning waves-effect " style=" ">DOWNLOAD RESUME</a>
+<p class="card-text" style="font-weight: bolder; margin: 5px">Hire me, I'm really good.</p>
+                    <div class="align-self-center">
+                    <a href="resume.pdf" download class="btn btn-outline-warning waves-effect" style="">DOWNLOAD RESUME</a>
                     </div>
 
                 </div>
@@ -253,43 +249,43 @@ My job is to build your project so that it is functional and user-friendly but a
     </div>
     
     
-    <div id="edu " class="container-fluid ">
-        <div class="overlay ">
-            <div class="jumbotron2 "><p class="hedrr text-center text-light text-uppercase ">Education</p></div>
+    <div id="edu" class="container-fluid">
+        <div class="overlay">
+            <div class="jumbotron2"><p class="hedrr text-center text-light text-uppercase">Education</p></div>
 
-          <div class="container-fluid ">
-            <div class="row ">
-                <div class="col-md-4 " >          
-                <div class="edu-card card " id="school ">
-                    <div class="align-self-center " style="height: 150px "><img src="img/icons/school.png " class="align-self-center " style="width: 80px "></div>
-                    <div class="card-header ">X (Secondary)</div>
-                    <div class="card-body ">Year of Completion: 2012
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4" >          
+                <div class="edu-card card" id="school">
+                    <div class="align-self-center" style="height: 150px"><img src="img/icons/school.png" class="align-self-center" style="width: 80px"></div>
+                    <div class="card-header">X (Secondary)</div>
+                    <div class="card-body">Year of Completion: 2012
                       <br>
                       R K V High School, Bagodar(Giridih)
                       <br>
                       JAC Board 
                     </div> 
-                    <div class="card-footer ">Percentage : 82.4%</div>
+                    <div class="card-footer">Percentage : 82.4%</div>
                 </div>
                 </div>
-                <div class="col-md-4 ">          
-                <div class="edu-card card " id="collage ">
-                    <div class="align-self-center " style="height: 150px "><img src="img/icons/university.png " class="align-self-center " style="width: 110px "></div>
-                    <div class="card-header ">XII (Senior Secondary), Science</div>
-                    <div class="card-body ">Year of Completion: 2014
+                <div class="col-md-4">          
+                <div class="edu-card card" id="collage">
+                    <div class="align-self-center" style="height: 150px"><img src="img/icons/university.png" class="align-self-center" style="width: 110px"></div>
+                    <div class="card-header">XII (Senior Secondary), Science</div>
+                    <div class="card-body">Year of Completion: 2014
                       <br>
                       St. Columba's College, Hazaribagh
                       <br>
                       JAC Board
                     </div> 
-                    <div class="card-footer ">Percentage : 74%</div>
+                    <div class="card-footer">Percentage : 74%</div>
                 </div>
                 </div>
-                <div class="col-md-4 ">          
-                <div class="edu-card card " id="university ">
-                    <div class="align-self-center " style="height: 150px "><img src="img/icons/mortarboard.png " class="align-self-center " style="width: 100px "></div>
-                    <div class="card-header ">Bachelor of Technology (B.Tech)</div>
-                    <div class="card-body ">Computer Science & Engineering
+                <div class="col-md-4">          
+                <div class="edu-card card" id="university">
+                    <div class="align-self-center" style="height: 150px"><img src="img/icons/mortarboard.png" class="align-self-center" style="width: 100px"></div>
+                    <div class="card-header">Bachelor of Technology (B.Tech)</div>
+                    <div class="card-body">Computer Science & Engineering
                       <br>
                       (2015 - 2019)
                       <br>
@@ -297,7 +293,7 @@ My job is to build your project so that it is functional and user-friendly but a
                       <br>
                       Kolhan University
                     </div> 
-                    <div class="card-footer ">Pursuing</div>
+                    <div class="card-footer">Pursuing</div>
                 </div>
                 </div>
           </div>
@@ -306,152 +302,152 @@ My job is to build your project so that it is functional and user-friendly but a
     </div>
     
     
-    <div id="skills " class="container-fluid ">
-        <div class="overlay ">
-            <div class="jumbotron2 "><p class="hedrr text-center text-light text-uppercase ">My Skills</p></div>
-            <div class="container-fluid ">
-                <div class="row ">
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">HTML</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-html "></div>
+    <div id="skills" class="container-fluid">
+        <div class="overlay">
+            <div class="jumbotron2"><p class="hedrr text-center text-light text-uppercase">My Skills</p></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">HTML</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-html"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">CSS</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-css "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">CSS</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-css"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">JavaScript</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-javascript "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">JavaScript</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-javascript"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">PHP</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-php "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">PHP</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-php"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">SQL</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-sql "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">SQL</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-sql"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">JQuery</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-jquery "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">JQuery</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-jquery"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">Android App Development</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-android "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">Android App Development</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-android"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">AJAX</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-ajax "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">AJAX</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-ajax"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">JAVA</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-java "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">JAVA</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-java"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">Python</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-python "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">Python</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-python"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">C Programming</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-c "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">C Programming</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-c"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">Photoshop</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-photoshop "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">Photoshop</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-photoshop"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">Video Editing</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-video "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">Video Editing</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-video"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">Network+</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-ae "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">Network+</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-ae"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">CCNA</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-anim "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">CCNA</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-anim"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">Creative Writing</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-writing "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">Creative Writing</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-writing"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">Microsoft Office</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-mso "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">Microsoft Office</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-mso"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="card progress-card ">
-                            <p class="myskills ">Soft Skills</p>
-                            <div class="progress ">
-                                <div class="progress-bar " id="p-others "></div>
+                    <div class="col-md-6">
+                        <div class="card progress-card">
+                            <p class="myskills">Soft Skills</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="p-others"></div>
                             </div>
                         </div>
                     </div>
@@ -461,86 +457,86 @@ My job is to build your project so that it is functional and user-friendly but a
     </div>
     
     
-    <div id="portfolio " class="container-fluid ">
-        <div class="overlay ">
-            <div class="jumbotron2 "><p class="hedrr text-center text-light text-uppercase ">Portfolio</p></div>
-            <div class="container-fluid ">
-                <div class="row ">
-                    <div class="container col-md-4 " id="port1 ">
+    <div id="portfolio" class="container-fluid">
+        <div class="overlay">
+            <div class="jumbotron2"><p class="hedrr text-center text-light text-uppercase">Portfolio</p></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container col-md-4" id="port1">
                         <!-- Card -->
-                        <div class="card " style="margin-top: 20px ">
+                        <div class="card" style="margin-top: 20px">
                         
                           <!-- Card image -->
-                          <div class="view overlay " style="max-height: 230px ">
-                            <img class="card-img-top " src="img/navkriti_in2.png " alt="Card image cap ">
-                            <a href="#! ">
-                              <div class="mask rgba-white-slight "></div>
+                          <div class="view overlay" style="max-height: 230px">
+                            <img class="card-img-top" src="img/navkriti_in2.png" alt="Card image cap">
+                            <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
                             </a>
                           </div>
                         
                           <!-- Card content -->
-                          <div class="card-body ">
+                          <div class="card-body">
                         
                             <!-- Title -->
-                            <h4 class="card-title ">Navkriti.in</h4>
+                            <h4 class="card-title">Navkriti.in</h4>
                             <!-- Text -->
-                            <p class="card-text porttext-limit ">This is the official website for Chaibasa Engineering College's annual techfest, Navkriti.</p>
+                            <p class="card-text porttext-limit">This is the official website for Chaibasa Engineering College's annual techfest, Navkriti.</p>
                             <!-- Button -->
-                            <a href="http://navkriti.in/ " target="_blank " class="btn btn-primary ">Visit</a>
+                            <a href="http://navkriti.in/" target="_blank" class="btn btn-primary">Visit</a>
                         
                           </div>
                         
                         </div>
                         <!-- Card -->
                     </div>
-                    <div class="container col-md-4 " id="port2 ">
+                    <div class="container col-md-4" id="port2">
                         <!-- Card -->
-                        <div class="card " style="margin-top: 20px ">
+                        <div class="card" style="margin-top: 20px">
                         
                           <!-- Card image -->
-                          <div class="view overlay " style="max-height: 230px ">
-                            <img class="card-img-top " src="img/navkriti_app.jpeg " alt="Card image cap ">
-                            <a href="#! ">
-                              <div class="mask rgba-white-slight "></div>
+                          <div class="view overlay" style="max-height: 230px">
+                            <img class="card-img-top" src="img/navkriti_app.jpeg" alt="Card image cap">
+                            <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
                             </a>
                           </div>
                         
                           <!-- Card content -->
-                          <div class="card-body ">
+                          <div class="card-body">
                         
                             <!-- Title -->
-                            <h4 class="card-title ">Navkriti'18 App</h4>
+                            <h4 class="card-title">Navkriti'18 App</h4>
                             <!-- Text -->
-                            <p class="card-text porttext-limit ">This is the official android app for Chaibasa Engineering College's annual techfest, Navkriti.</p>
+                            <p class="card-text porttext-limit">This is the official android app for Chaibasa Engineering College's annual techfest, Navkriti.</p>
                             <!-- Button -->
-                            <a href="http://navkriti.in/ " target="_blank " class="btn btn-primary ">Visit</a>
+                            <a href="http://navkriti.in/" target="_blank" class="btn btn-primary">Visit</a>
                         
                           </div>
                         
                         </div>
                     </div>
                         <!-- Card -->
-                    <div class="container col-md-4 " id="port3 ">
+                    <div class="container col-md-4" id="port3">
                         <!-- Card -->
-                        <div class="card " style="margin-top: 20px ">
+                        <div class="card" style="margin-top: 20px">
                         
                           <!-- Card image -->
-                          <div class="view overlay " style="max-height: 230px ">
-                            <img class="card-img-top " src="img/softgyan2.png " alt="Card image cap ">
-                            <a href="#! ">
-                              <div class="mask rgba-white-slight "></div>
+                          <div class="view overlay" style="max-height: 230px">
+                            <img class="card-img-top" src="img/softgyan2.png" alt="Card image cap">
+                            <a href="#!">
+                              <div class="mask rgba-white-slight"></div>
                             </a>
                           </div>
                         
                           <!-- Card content -->
-                          <div class="card-body ">
+                          <div class="card-body">
                         
                             <!-- Title -->
-                            <h4 class="card-title ">Softgyan Online Exam Portal</h4>
+                            <h4 class="card-title">Softgyan Online Exam Portal</h4>
                             <!-- Text -->
-                            <p class="card-text porttext-limit ">It is online exam portal(MCQs) for Computer Science Based events in CEC's annual techfest, Navkriti'18.</p>
+                            <p class="card-text porttext-limit">It is online exam portal(MCQs) for Computer Science Based events in CEC's annual techfest, Navkriti'18.</p>
                             <!-- Button -->
-                            <a href="http://navkriti.in/demo/ " target="_blank " class="btn btn-primary ">Visit</a>
+                            <a href="http://navkriti.in/demo/" target="_blank" class="btn btn-primary">Visit</a>
                         
                           </div>
                         
@@ -549,79 +545,79 @@ My job is to build your project so that it is functional and user-friendly but a
                 </div>
             </div>
         </div><!-- Cards finish -->
-        <div class="container ">
+        <div class="container">
             <center>
-                <p class="font-weight-bold text-light ">MY LATEST PROJECTS | <a href="#! " class="btn btn-outline-light waves-effect " style="font-weight: bolder; ">SEE MORE &gt;</a></p>
+                <p class="font-weight-bold text-light">MY LATEST PROJECTS | <a href="#!" class="btn btn-outline-light waves-effect" style="font-weight: bolder;">SEE MORE &gt;</a></p>
             </center>
         </div>
     </div>
 </div>
     
     
-    <div id="contact " class="container-fluid ">
-        <div class="overlay ">
-            <div class="container contact-card " id="contact2 " style="padding-top: 20px ">
-                <div class="card con-card " style=" ">
-                    <div class="row ">
-                        <div class="col-md-6 contact-details " style=" ">
+    <div id="contact" class="container-fluid">
+        <div class="overlay">
+            <div class="container contact-card" id="contact2" style="padding-top: 20px">
+                <div class="card con-card" style="">
+                    <div class="row">
+                        <div class="col-md-6 contact-details" style="">
                             <h4>CONTACT</h4>
-                            <img src="img/icons/home.png ">
+                            <img src="img/icons/home.png">
                             <p>
                                 Vivek Nagar, Sariya Road<br>
                                 P.O.: Bagodar<br>
                                 Giridih-825322<br>
                                 Jharkhand (INDIA)
                             </p>
-                            <img src="img/icons/email.png ">
+                            <img src="img/icons/email.png">
                             <p>ajaykumarcse.cec@gmail.com</p>
-                            <img src="img/icons/telephone.png ">
-                            <img src="img/icons/whatsapp.png ">
-                            <p style="margin: 0 ">+91-8002321141</p>
+                            <img src="img/icons/telephone.png">
+                            <img src="img/icons/whatsapp.png">
+                            <p style="margin: 0">+91-8002321141</p>
                             <p>+91-7992462208</p>
 
                         </div>
-                        <div class="col-md-6 " style=" ">
-                            <div class="container ">
-                              <form id="ashishform " method="post " action="send.php " enctype="multipart/form-data ">
-                                <div class="form-group ">
-                                  <input type="text " class="form-control " id="c-name " placeholder="Name * " name="name " required>
+                        <div class="col-md-6" style="">
+                            <div class="container">
+                              <form id="ashishform" method="post" action="send.php" enctype="multipart/form-data">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="c-name" placeholder="Name *" name="name" required>
                                 </div>
-                            <div class="row rrow " style=" ">
-                                <div class="form-group col-md-7 eemail " style=" ">
-                                  <input type="email " class="form-control " id="c-email " placeholder="Email * " name="email " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$ " title="Invalid Email-ID " required>
+                            <div class="row rrow" style="">
+                                <div class="form-group col-md-7 eemail" style="">
+                                  <input type="email" class="form-control" id="c-email" placeholder="Email *" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Invalid Email-ID" required>
                                 </div>
-                                <div class="form-group col-md-5 " style=" ">
-                                  <input type="contact " class="form-control " id="c-num " placeholder="Number " name="num " pattern="[0-9]{10} " title="Invalid Mobile Number. It must contain only 10 digit. ">
+                                <div class="form-group col-md-5" style="">
+                                  <input type="contact" class="form-control" id="c-num" placeholder="Number" name="num" pattern="[0-9]{10}" title="Invalid Mobile Number. It must contain only 10 digit.">
                                 </div>
                             </div>
-                                <div class="form-group " style=" ">
-                                  <input type="text " class="form-control " id="c-sub " placeholder="Subject " name="subject ">
+                                <div class="form-group" style="">
+                                  <input type="text" class="form-control" id="c-sub" placeholder="Subject" name="subject">
                                 </div>
-                                <div class="form-group ">
-                                  <textarea type="text " class="form-control " id="c-msg " placeholder="Message " name="message " rows="3 "></textarea>
+                                <div class="form-group">
+                                  <textarea type="text" class="form-control" id="c-msg" placeholder="Message" name="message" rows="3"></textarea>
                                 </div>
-                                <center><button type="submit " class="btn btn-outline-success waves-effect ">SEND</button></center>
+                                <center><button type="submit" class="btn btn-outline-success waves-effect">SEND</button></center>
                               </form>
                             </div>
                         </div>
                     </div>
                     <center>
-                    <div class="container social ">
-                        <a href="https://www.linkedin.com/in/ajay-kumar-4989b7152/ " target="_blank "><img src="img/icons/linkedin.png "></a>
-                        <a href="https://plus.google.com/105560559472590109887 " target="_blank "><img src="img/icons/googleplus2.png "></a>
-                        <a href="https://twitter.com/akrana1997 " target="_blank "><img src="img/icons/twitter.png "></a>
-                        <a href="https://www.instagram.com/ajaykumar201761/?hl=en " target="_blank "><img src="img/icons/instagram.png "></a>
-                        <a href="https://www.facebook.com/profile.php?id=100009662911548&ref=bookmarks " target="_blank "><img src="img/icons/facebook.png "></a>
+                    <div class="container social">
+                        <a href="https://www.linkedin.com/in/ajay-kumar-4989b7152/" target="_blank"><img src="img/icons/linkedin.png"></a>
+                        <a href="https://plus.google.com/105560559472590109887" target="_blank"><img src="img/icons/googleplus2.png"></a>
+                        <a href="https://twitter.com/akrana1997" target="_blank"><img src="img/icons/twitter.png"></a>
+                        <a href="https://www.instagram.com/ajaykumar201761/?hl=en" target="_blank"><img src="img/icons/instagram.png"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100009662911548&ref=bookmarks" target="_blank"><img src="img/icons/facebook.png"></a>
                     </div>
                     </center>
                 </div>
             </div>
-            <div class="container-fluid footer ">
-                <div class="jumbotron jumbotron-fluid ">
-                    <a href="#! " onclick="opennc() "><p class="text-center " style="color: #8888ee; width: 100%; margin: 0 " id="btn-nc ">
+            <div class="container-fluid footer">
+                <div class="jumbotron jumbotron-fluid">
+                    <a href="#!" onclick="opennc()"><p class="text-center" style="color: #8888ee; width: 100%; margin: 0" id="btn-nc">
                         notes & credits
                     </p></a>                    
-                    <p class="text-center " style="color: #88ee88; width: 100%; margin: 0 ">
+                    <p class="text-center" style="color: #88ee88; width: 100%; margin: 0">
                         &copy; Copyright 2018 by Myself.
                     </p>
 
@@ -634,15 +630,14 @@ My job is to build your project so that it is functional and user-friendly but a
 
 
     <center>
-        <div id="nc-bg " onclick="closenc() ">
-            <div id="notes-credits ">
+        <div id="nc-bg" onclick="closenc()">
+            <div id="notes-credits">
                 <h4>Note:</h4>
                 <p>This website uses HTML, CSS, Bootstrap, JavaScript, JQuery, AJAX, PHP, SQL and a few third party libraries.</p>
-                <h4 style="margin-top: 40px ">Credits:</h4>
-                <p>Bootstrap library by <a href="https://mdbootstrap.com/ ">MDBootstrap.com</a></p>
-                <p><a href="https://stackoverflow.com/ ">Stackoverflow.com</a> & <a href="https://www.w3schools.com/ ">w3schools.com</a> for help and debugging.</p>
-                <div>Icons made by <a href="http://www.freepik.com " title="Freepik ">Freepik</a> from <a href="https://www.flaticon.com/ " title="Flaticon ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/
-            " title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a></div>
+                <h4 style="margin-top: 40px">Credits:</h4>
+                <p>Bootstrap library by <a href="https://mdbootstrap.com/">MDBootstrap.com</a></p>
+                <p><a href="https://stackoverflow.com/">Stackoverflow.com</a> & <a href="https://www.w3schools.com/">w3schools.com</a> for help and debugging.</p>
+                <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
             </div>
         </div>
@@ -652,19 +647,19 @@ My job is to build your project so that it is functional and user-friendly but a
 
 <script>
 function navToggle(){
-    document.getElementById("nav-icon1 ").classList.toggle("open ");
-    var navb = document.getElementById("mySidenav ");
-    var navbg = document.getElementById("mySidenavbg ");
-    var navbg2 = document.getElementById("mySidenavbg2 ");
-    if(navb.style.width != "90% "){
-        navb.style.width = "90% ";
-        navbg.style.width = "200% ";
-        navbg2.style.width = "100% ";
+    document.getElementById("nav-icon1").classList.toggle("open");
+    var navb = document.getElementById("mySidenav");
+    var navbg = document.getElementById("mySidenavbg");
+    var navbg2 = document.getElementById("mySidenavbg2");
+    if(navb.style.width != "90%"){
+        navb.style.width = "90%";
+        navbg.style.width = "200%";
+        navbg2.style.width = "100%";
     }
     else{
-        navb.style.width = "0 ";
-        navbg.style.width = "0 ";
-        navbg2.style.width = "0 ";
+        navb.style.width = "0";
+        navbg.style.width = "0";
+        navbg2.style.width = "0";
     }
 }
 </script>
@@ -674,155 +669,155 @@ function navToggle(){
 
 
 
-<script type="text/javascript ">
+<script type="text/javascript">
 //     $(window).load(function() {      //Do the code in the {}s when the window has loaded 
-//         document.getElementById("loader ").classList.add("hide ");
+//         document.getElementById("loader").classList.add("hide");
 // });
     function hls(){
-        document.getElementById("loader ").classList.add("animated ");
-        document.getElementById("loader ").classList.add("fadeOut ");
-        document.getElementById("loader ").classList.add("hide ");
+        document.getElementById("loader").classList.add("animated");
+        document.getElementById("loader").classList.add("fadeOut");
+        document.getElementById("loader").classList.add("hide");
     }
 </script>
 
-<script type="text/javascript ">
+<script type="text/javascript">
 $(window).scroll(function(event) {
-    if($("#about2 ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("subnav ").href="#home ";
-        document.getElementById("downarrow ").classList.add("nothome ");
-        document.getElementById("subnav ").classList.add("nothome2 ");
-        document.getElementById("downicon ").classList.add("up ");
+    if($("#about2").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("subnav").href="#home";
+        document.getElementById("downarrow").classList.add("nothome");
+        document.getElementById("subnav").classList.add("nothome2");
+        document.getElementById("downicon").classList.add("up");
     }else {
-        document.getElementById("subnav ").href="#about2 ";
-        document.getElementById("downarrow ").classList.remove("nothome ");
-        document.getElementById("subnav ").classList.remove("nothome2 ");
-        document.getElementById("downicon ").classList.remove("up ");
+        document.getElementById("subnav").href="#about2";
+        document.getElementById("downarrow").classList.remove("nothome");
+        document.getElementById("subnav").classList.remove("nothome2");
+        document.getElementById("downicon").classList.remove("up");
     }
 });
 </script>
 
-<script type="text/javascript ">
+<script type="text/javascript">
 $(window).scroll(function(event) {
-    if($("#edu ").offset().top+200 < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("school ").classList.add("animated ","fadeInRight ");
-        document.getElementById("collage ").classList.add("animated ","fadeInUp ");
-        document.getElementById("university ").classList.add("animated ", "fadeInLeft ");
+    if($("#edu").offset().top+200 < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("school").classList.add("animated","fadeInRight");
+        document.getElementById("collage").classList.add("animated","fadeInUp");
+        document.getElementById("university").classList.add("animated", "fadeInLeft");
     }
 });
 </script>
 
-<script type="text/javascript ">
+<script type="text/javascript">
 $(window).scroll(function(event) {
-    if($("#portfolio ").offset().top+200 < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("port1 ").classList.add("animated ","fadeInRight ");
-        document.getElementById("port2 ").classList.add("animated ","fadeInUp ");
-        document.getElementById("port3 ").classList.add("animated ", "fadeInLeft ");
+    if($("#portfolio").offset().top+200 < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("port1").classList.add("animated","fadeInRight");
+        document.getElementById("port2").classList.add("animated","fadeInUp");
+        document.getElementById("port3").classList.add("animated", "fadeInLeft");
     }
 });
 </script>
 
 
-<script type="text/javascript ">
+<script type="text/javascript">
 $(window).scroll(function(event) {
-    if($("#p-html ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-html ").classList.add("p-html ");
+    if($("#p-html").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-html").classList.add("p-html");
     }
 
 
-    if($("#p-css ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-css ").classList.add("p-css ");
+    if($("#p-css").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-css").classList.add("p-css");
     }
 
 
-    if($("#p-javascript ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-javascript ").classList.add("p-javascript ");
+    if($("#p-javascript").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-javascript").classList.add("p-javascript");
     }
 
 
-    if($("#p-php ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-php ").classList.add("p-php ");
+    if($("#p-php").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-php").classList.add("p-php");
     }
 
 
-    if($("#p-sql ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-sql ").classList.add("p-sql ");
+    if($("#p-sql").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-sql").classList.add("p-sql");
     }
 
 
-    if($("#p-android ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-android ").classList.add("p-android ");
+    if($("#p-android").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-android").classList.add("p-android");
     }
 
 
-    if($("#p-jquery ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-jquery ").classList.add("p-jquery ");
+    if($("#p-jquery").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-jquery").classList.add("p-jquery");
     }
 
 
-    if($("#p-ajax ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-ajax ").classList.add("p-ajax ");
+    if($("#p-ajax").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-ajax").classList.add("p-ajax");
     }
 
 
-    if($("#p-java ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-java ").classList.add("p-java ");
+    if($("#p-java").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-java").classList.add("p-java");
     }
 
 
-    if($("#p-python ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-python ").classList.add("p-python ");
+    if($("#p-python").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-python").classList.add("p-python");
     }
 
 
-    if($("#p-c ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-c ").classList.add("p-c ");
+    if($("#p-c").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-c").classList.add("p-c");
     }
 
 
-    if($("#p-photoshop ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-photoshop ").classList.add("p-photoshop ");
+    if($("#p-photoshop").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-photoshop").classList.add("p-photoshop");
     }
 
 
-    if($("#p-video ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-video ").classList.add("p-video ");
+    if($("#p-video").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-video").classList.add("p-video");
     }
 
 
-    if($("#p-ae ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-ae ").classList.add("p-ae ");
+    if($("#p-ae").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-ae").classList.add("p-ae");
     }
 
 
-    if($("#p-writing ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-writing ").classList.add("p-writing ");
+    if($("#p-writing").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-writing").classList.add("p-writing");
     }
 
 
-    if($("#p-mso ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-mso ").classList.add("p-mso ");
+    if($("#p-mso").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-mso").classList.add("p-mso");
     }
 
 
-    if($("#p-anim ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-anim ").classList.add("p-anim ");
+    if($("#p-anim").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-anim").classList.add("p-anim");
     }
 
 
-    if($("#p-others ").offset().top < $(window).scrollTop() + $(window).outerHeight()){
-        document.getElementById("p-others ").classList.add("p-others ");
+    if($("#p-others").offset().top < $(window).scrollTop() + $(window).outerHeight()){
+        document.getElementById("p-others").classList.add("p-others");
     }    
 });
 </script>
 
-<script type="text/javascript ">
+<script type="text/javascript">
     $(window).scroll(function(event) {
         if($(window).scrollTop()===200){
            $('html,body').animate({
-                scrollTop: $("#about2 ").offset().top
+                scrollTop: $("#about2").offset().top
                 }, 800, function(){
                     var url = location.href;
-                    window.location.hash = "#about2 ";
+                    window.location.hash = "#about2";
                     history.replaceState(null,null,url);
                 });
         }
@@ -830,32 +825,32 @@ $(window).scroll(function(event) {
 </script>
 
 
-<script type="text/javascript ">
+<script type="text/javascript">
     function opennc(){
-        var ncbtn = document.getElementById("notes-credits ");
-        ncbtn.style.height="100vh ";
-        ncbtn.style.width="100% ";
-        ncbtn.style.marginLeft="0% ";
-        ncbtn.style.bottom="0 ";
-        var ncbg = document.getElementById("nc-bg ");
-        ncbg.style.height="100vh ";
-        ncbg.style.width="100% ";
-        ncbg.style.marginLeft="0% ";
-        ncbg.style.bottom="0 ";
+        var ncbtn = document.getElementById("notes-credits");
+        ncbtn.style.height="100vh";
+        ncbtn.style.width="100%";
+        ncbtn.style.marginLeft="0%";
+        ncbtn.style.bottom="0";
+        var ncbg = document.getElementById("nc-bg");
+        ncbg.style.height="100vh";
+        ncbg.style.width="100%";
+        ncbg.style.marginLeft="0%";
+        ncbg.style.bottom="0";
 
 
     }
     function closenc(){
-        var ncbtn = document.getElementById("notes-credits ");
-        ncbtn.style.height="0 ";
-        ncbtn.style.width="0% ";
-        ncbtn.style.marginLeft="50% ";
-        ncbtn.style.bottom="45px ";
-        var ncbg = document.getElementById("nc-bg ");
-        ncbg.style.height="0 ";
-        ncbg.style.width="0% ";
-        ncbg.style.marginLeft="50% ";
-        ncbg.style.bottom="45px ";
+        var ncbtn = document.getElementById("notes-credits");
+        ncbtn.style.height="0";
+        ncbtn.style.width="0%";
+        ncbtn.style.marginLeft="50%";
+        ncbtn.style.bottom="45px";
+        var ncbg = document.getElementById("nc-bg");
+        ncbg.style.height="0";
+        ncbg.style.width="0%";
+        ncbg.style.marginLeft="50%";
+        ncbg.style.bottom="45px";
 
 
     }
@@ -867,15 +862,15 @@ $(window).scroll(function(event) {
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript " src="js/popper.min.js "></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript " src="js/mdb.min.js "></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- ScrollMagic core JavaScript -->
-    <script type="text/javascript " src="js/ScrollMagic.min.js "></script>
+    <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
 
 
 </body>
