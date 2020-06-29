@@ -11,18 +11,10 @@ $subject=$_POST["subject"];
 $message=$_POST["message"];
 
 
-//$servername = "localhost";
-//$username = "root";
-//$password = "";
-//$dbname = "aman";
-//$servername = "localhost";
-//$username = "Aman_ajay_ashish";
-//$password = "Cec@8210339664";
-//$dbname = "Form_register420";
 $servername = "localhost";
-$username = "acreator_team";
-$password = "aaa@817291";
-$dbname = "acreator_a3";
+$username = "username";
+$password = "password";
+$dbname = "dbname";
 $con=mysqli_connect($servername, $username, $password, $dbname);
 //$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
