@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ajaykumar2017.github.io/sitemap.xml
