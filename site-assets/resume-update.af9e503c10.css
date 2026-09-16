@@ -1,0 +1,18 @@
+
+.certification-row{margin-top:72px;padding-top:32px;border-top:1px solid var(--line)}
+.certification-row>.eyebrow{margin-bottom:22px}
+.certification-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.credential-card{display:flex;align-items:flex-start;gap:16px;padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--surface);min-width:0}
+.credential-card>svg{color:var(--amber);margin-top:4px}
+.credential-type{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+.credential-card h3{font-size:18px;line-height:1.4;letter-spacing:-.025em}
+.credential-card .text-link{margin-top:8px;font-size:11px;color:var(--accent)}
+.degree .degree-grade{font-family:var(--display);font-size:20px;color:var(--accent);margin-top:12px}
+.resume-summary{font-size:14px;line-height:1.9;color:var(--muted)}
+.resume-degree+.resume-degree,.resume-certificate+.resume-certificate{margin-top:24px}
+.resume-degree h3,.resume-certificate h3{font-size:19px;line-height:1.4}
+.resume-degree p{margin-top:7px;font-size:13px;color:var(--muted)}
+.resume-certificate .text-link{font-size:12px;color:var(--accent);margin-top:4px}
+.resume-page .resume-section>h2{font-size:27px}
+@media(max-width:640px){.certification-row{margin-top:38px;padding-top:26px}.certification-grid{grid-template-columns:1fr;gap:14px}.credential-card{padding:20px}.credential-card h3{font-size:17px}.resume-summary{font-size:13px}.resume-degree h3,.resume-certificate h3{font-size:17px}}
+@media print{.resume-section{break-inside:auto}.resume-job,.resume-degree,.resume-certificate,.resume-skill{break-inside:avoid}.resume-summary,.resume-degree p{color:#111}.resume-certificate .text-link{color:#111}}
